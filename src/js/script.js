@@ -8,6 +8,7 @@ function decrypt(data, key = 'mohler') {
 function formatPhone(phone) {
     return phone.replace(/(\+\d{3})(\d{3})(\d{3})(\d{3})/, '$1\u00A0$2\u00A0$3\u00A0$4');
 }
+
 document.addEventListener('DOMContentLoaded', function() {
     const phone = decrypt('RltaXFJBWVtcW1VLVA==');
     const email = decrypt('AA4aGAwcLQIHBAkXH0EBGA==');
