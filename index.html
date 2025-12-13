@@ -73,6 +73,7 @@
                 </div>
                 <div class="flex items-end justify-end">
                     <img 
+                        id="hero-image"
                         src="dist/images/martinmohler.webp" 
                         alt="Martin Mohler" 
                         class="lg:absolute lg:bottom-0 lg:left-1/2 lg:max-w-[50%] lg:max-h-full"
@@ -83,6 +84,17 @@
             
         </div>
     </main>
+
+    <script>
+        (function() {
+            var now = new Date();
+            var month = now.getMonth();
+            var day = now.getDate();
+            if (month === 11 && day >= 1 && day < 25) {
+                document.getElementById('hero-image').src = 'dist/images/martinmohler_xmas.webp';
+            }
+        })();
+    </script>
 
 </body>
 </html>
